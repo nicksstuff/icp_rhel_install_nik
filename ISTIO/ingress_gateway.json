@@ -1,0 +1,49 @@
+{
+  "apiVersion": "v1",
+  "kind": "Service",
+  "metadata": {
+    "name": "istio-ingressgateway",
+    "namespace": "istio-system",
+    "labels": {
+      "chart": "ingressgateway-0.8.0",
+      "heritage": "Tiller",
+      "istio": "ingressgateway",
+      "release": "RELEASE-NAME"
+    },
+    "annotations": {
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Service\",\"metadata\":{\"annotations\":{},\"labels\":{\"chart\":\"ingressgateway-0.8.0\",\"heritage\":\"Tiller\",\"istio\":\"ingressgateway\",\"release\":\"RELEASE-NAME\"},\"name\":\"istio-ingressgateway\",\"namespace\":\"istio-system\"},\"spec\":{\"ports\":[{\"name\":\"http\",\"nodePort\":31380,\"port\":80},{\"name\":\"https\",\"nodePort\":31390,\"port\":443},{\"name\":\"tcp\",\"nodePort\":31400,\"port\":31400}],\"selector\":{\"istio\":\"ingressgateway\"},\"type\":\"LoadBalancer\"}}\n"
+    }
+  },
+  "spec": {
+    "ports": [
+      {
+        "name": "http",
+        "protocol": "TCP",
+        "port": 80,
+        "targetPort": 80,
+        "nodePort": 31461
+      },
+      {
+        "name": "https",
+        "protocol": "TCP",
+        "port": 443,
+        "targetPort": 443,
+        "nodePort": 31390
+      },
+      {
+        "name": "tcp",
+        "protocol": "TCP",
+        "port": 31400,
+        "targetPort": 31400,
+        "nodePort": 31400
+      }
+    ],
+    "selector": {
+      "istio": "ingressgateway"
+    },
+    "clusterIP": "10.0.0.157",
+    "type": "LoadBalancer",
+    "sessionAffinity": "None",
+    "externalTrafficPolicy": "Cluster"
+  }
+}

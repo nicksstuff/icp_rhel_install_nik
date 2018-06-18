@@ -1,0 +1,362 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: nfsvol01rwo
+spec:
+  capacity:
+    storage: 30Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Recycle
+  nfs:
+    path: /storage/nfsvol01rwo
+    server: mycluster.icp
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: nfsvol02rwm
+spec:
+  capacity:
+    storage: 30Gi
+  accessModes:
+    - ReadWriteMany
+  persistentVolumeReclaimPolicy: Recycle
+  nfs:
+    path: /storage/nfsvol02rwm
+    server: mycluster.icp
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: nfsvol03rwo
+spec:
+  capacity:
+    storage: 30Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Recycle
+  nfs:
+    path: /storage/nfsvol03rwo
+    server: mycluster.icp
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: nfsvol04rwm
+spec:
+  capacity:
+    storage: 30Gi
+  accessModes:
+    - ReadWriteMany
+  persistentVolumeReclaimPolicy: Recycle
+  nfs:
+    path: /storage/nfsvol04rwm
+    server: mycluster.icp
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: nfsvol05rwo
+spec:
+  capacity:
+    storage: 30Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Recycle
+  nfs:
+    path: /storage/nfsvol05rwo
+    server: mycluster.icp
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: nfsvol06rwm
+spec:
+  capacity:
+    storage: 30Gi
+  accessModes:
+    - ReadWriteMany
+  persistentVolumeReclaimPolicy: Recycle
+  nfs:
+    path: /storage/nfsvol06rwm
+    server: mycluster.icp
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: nfsvol07rwo
+spec:
+  capacity:
+    storage: 30Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Recycle
+  nfs:
+    path: /storage/nfsvol07rwo
+    server: mycluster.icp
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: nfsvol08rwm
+spec:
+  capacity:
+    storage: 30Gi
+  accessModes:
+    - ReadWriteMany
+  persistentVolumeReclaimPolicy: Recycle
+  nfs:
+    path: /storage/nfsvol08rwm
+    server: mycluster.icp
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: nfsvol13rwo
+spec:
+  capacity:
+    storage: 30Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Recycle
+  nfs:
+    path: /storage/nfsvol13rwo
+    server: mycluster.icp
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: nfsvol14rwo
+spec:
+  capacity:
+    storage: 30Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Recycle
+  nfs:
+    path: /storage/nfsvol14rwo
+    server: mycluster.icp
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: nfsvol15rwo
+spec:
+  capacity:
+    storage: 30Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Recycle
+  nfs:
+    path: /storage/nfsvol15rwo
+    server: mycluster.icp
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: nfsvol16rwo
+spec:
+  capacity:
+    storage: 30Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Recycle
+  nfs:
+    path: /storage/nfsvol16rwo
+    server: mycluster.icp
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: nfsvol17rwo
+spec:
+  capacity:
+    storage: 30Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Recycle
+  nfs:
+    path: /storage/nfsvol17rwo
+    server: mycluster.icp
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: nfsvol18rwo
+spec:
+  capacity:
+    storage: 30Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Recycle
+  nfs:
+    path: /storage/nfsvol18rwo
+    server: mycluster.icp
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: dsxpv
+  labels:
+    assign-to: "user-home"
+spec:
+  capacity:
+    storage: 2Gi
+  accessModes:
+    - ReadWriteMany
+  persistentVolumeReclaimPolicy: Recycle
+  nfs:
+    server: mycluster.icp
+    path: /storage/dsx
+---
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: tra-data-pv
+  labels:
+    type: local
+spec:
+  persistentVolumeReclaimPolicy: Recycle
+  capacity:
+    storage: 8Gi
+  accessModes:
+    - ReadWriteMany
+  persistentVolumeReclaimPolicy: Recycle
+  nfs:
+    server: mycluster.icp
+    path: /storage/TRA_data
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: data-stor
+spec:
+  capacity:
+    storage: 20Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Recycle
+  nfs:
+    server: mycluster.icp
+    path: /storage/data-stor
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: hadr-stor
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteMany
+  persistentVolumeReclaimPolicy: Recycle
+  nfs:
+    server: mycluster.icp
+    path: /storage/hadr-stor
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: etcd-stor
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Recycle
+  nfs:
+    server: mycluster.icp
+    path: /storage/etcd-stor
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv0001
+spec:
+  capacity:
+    storage: 4Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Recycle
+  nfs:
+    server: mycluster.icp
+    path: /storage/pv0001
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv0002
+spec:
+  capacity:
+    storage: 20Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Recycle
+  nfs:
+    server: mycluster.icp
+    path: /storage/pv0002
+---
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: cam-mongo-pv
+  labels:
+    type: cam-mongo
+spec:
+  capacity:
+    storage: 15Gi
+  persistentVolumeReclaimPolicy: Recycle
+  accessModes:
+    - ReadWriteMany
+  nfs:
+    server: mycluster.icp
+    path: /storage/CAM_db
+---
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: cam-bpd-appdata-pv
+  labels:
+    type: cam-bpd-appdata
+spec:
+  capacity:
+    storage: 20Gi
+  persistentVolumeReclaimPolicy: Recycle
+  accessModes:
+    - ReadWriteMany
+  nfs:
+    server: mycluster.icp
+    path: /storage/CAM_bpd
+---
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: cam-terraform-pv
+  labels:
+    type: cam-terraform
+spec:
+  capacity:
+    storage: 15Gi
+  persistentVolumeReclaimPolicy: Recycle
+  accessModes:
+    -  ReadWriteMany
+  nfs:
+    server: mycluster.icp
+    path: /storage/CAM_terraform
+---
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: cam-logs-pv
+  labels:
+    type: cam-logs
+spec:
+  capacity:
+    storage: 10Gi
+  persistentVolumeReclaimPolicy: Recycle
+  accessModes:
+    -  ReadWriteMany
+  nfs:
+    server: mycluster.icp
+    path: /storage/CAM_logs
