@@ -417,10 +417,10 @@ if [[ $DO_LIB == "y" ||  $DO_LIB == "Y" ]]; then
   docker build -t demoliberty:1.3.0 docker_130
 
   docker login mycluster.icp:8500 -u admin -p admin
-  docker tag libertysimple:1.3.0 mycluster.icp:8500/default/demoliberty:1.3.0
-  docker tag libertysimple:1.3.0 mycluster.icp:8500/default/demoliberty:1.2.0
-  docker tag libertysimple:1.3.0 mycluster.icp:8500/default/demoliberty:1.1.0
-  docker tag libertysimple:1.3.0 mycluster.icp:8500/default/demoliberty:1.0.0
+  docker tag mple:1.3.0 mycluster.icp:8500/default/demoliberty:1.3.0
+  docker tag demoliberty:1.3.0 mycluster.icp:8500/default/demoliberty:1.2.0
+  docker tag demoliberty:1.3.0 mycluster.icp:8500/default/demoliberty:1.1.0
+  docker tag demoliberty:1.3.0 mycluster.icp:8500/default/demoliberty:1.0.0
   docker push mycluster.icp:8500/default/demoliberty:1.3.0
   docker push mycluster.icp:8500/default/demoliberty:1.2.0
   docker push mycluster.icp:8500/default/demoliberty:1.1.0

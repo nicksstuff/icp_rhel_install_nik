@@ -2,9 +2,10 @@
 
 ```
 cd
-sudo yum install nano
-git clone https://github.com/niklaushirt/icp_rhel_install.git INSTALL
+sudo yum -y install nano
+git clone https://github.com/niklaushirt/icp_rhel_installl.git INSTALL
 cd INSTALL
+nano 0_variables.sh
 ```
 
 
