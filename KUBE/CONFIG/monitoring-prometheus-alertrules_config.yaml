@@ -12,7 +12,7 @@ data:
     - name: alert.rules
       rules:
       - alert: high_cpu_load
-        expr: node_load1 > 5
+        expr: node_load1 > 15
         for: 10s
         labels:
           severity: critical

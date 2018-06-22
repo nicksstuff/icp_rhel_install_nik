@@ -36,7 +36,7 @@ export DOCKER_HUB_MAIL=me@icp.com
 export ICP_VERSION=2.1.0.3
 
 export SSH_KEY=/path/to/key
-export SSH_USER=cloudusr
+export SSH_USER=root
 
 export PUBLIC_IP=x.x.x.x
 export MASTER_IP=x.x.x.x
