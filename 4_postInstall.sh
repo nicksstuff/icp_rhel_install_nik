@@ -66,7 +66,8 @@ read -p "Install and configure PersistentVolumes? [y,N]" DO_PV
 if [[ $DO_PV == "y" ||  $DO_PV == "Y" ]]; then
   # Create PersistentVolumes
   #echo "Install NFS Server"
-  #sudo apt-get --yes --force-yes install nfs-kernel-server
+  #yum install nfs-utils nfs-utils-lib
+
 
   echo "Start NFS Server"
   systemctl start nfs
